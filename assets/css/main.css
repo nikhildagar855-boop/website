@@ -1491,6 +1491,8 @@ h6 { font-size: clamp(1rem, 1.1vw + 0.5rem, 1.1rem); }
   padding: 80px 0;
   position: relative;
   clip-path: inset(0);
+  --contrast-color: #FC4281; /* Pink color for border & text */
+  --accent-color: #FC4281;   /* Pink color for hover background */
 }
 
 .call-to-action img {
@@ -1506,7 +1508,7 @@ h6 { font-size: clamp(1rem, 1.1vw + 0.5rem, 1.1rem); }
 
 .call-to-action:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 50%);
+  background: color-mix(in srgb, #FC4281, transparent 50%); /* Pink overlay tint */
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1542,7 +1544,8 @@ h6 { font-size: clamp(1rem, 1.1vw + 0.5rem, 1.1rem); }
 }
 
 .call-to-action .cta-btn:hover {
-  background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+  background: var(--accent-color);
+  color: white; /* For better contrast */
 }
 
 /*--------------------------------------------------------------
