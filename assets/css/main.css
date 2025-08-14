@@ -1044,6 +1044,94 @@ section,
 /*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/
+/* --- Responsive Enhancements: Global & Section Tweaks --- */
+
+/* Responsive Typography */
+h1 { font-size: clamp(1.75rem, 3.2vw + 0.5rem, 2.75rem); }
+h2 { font-size: clamp(1.5rem, 2.8vw + 0.5rem, 2.25rem); }
+h3 { font-size: clamp(1.25rem, 2.2vw + 0.5rem, 1.75rem); }
+h4 { font-size: clamp(1.125rem, 1.8vw + 0.5rem, 1.5rem); }
+h5 { font-size: clamp(1.05rem, 1.4vw + 0.5rem, 1.25rem); }
+h6 { font-size: clamp(1rem, 1.1vw + 0.5rem, 1.1rem); }
+
+/* Touch target sizing for buttons/links */
+.btn, .btn-primary, .btn-secondary,
+.header .btn-getstarted,
+.call-to-action .cta-btn,
+.portfolio .portfolio-filters li,
+.navmenu a {
+  min-height: 44px;
+}
+
+/* Portfolio filter wrapping on small screens */
+.portfolio .portfolio-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+
+/* Call To Action background image: avoid fixed on mobile */
+@media (max-width: 992px) {
+  .call-to-action img {
+    position: absolute;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Section spacing & general layout */
+  section, .section { padding: 40px 0; }
+
+  /* Header/logo sizing */
+  .header .logo img { max-height: 32px; }
+  .header .logo h1.sitename { font-size: 1.35rem; }
+
+  /* Nav link spacing (touch friendly) */
+  .navmenu a, .navmenu a:focus { padding: 14px 14px; }
+
+  /* Hero buttons stacking already covered; ensure spacing */
+  .hero .btn-get-started, .hero .btn-watch-video { margin-right: 0; }
+
+  /* Section titles overlay text smaller */
+  .section-title span { font-size: 1.8rem; top: 0; }
+
+  /* Services cards tighter */
+  .services .service-item { padding: 20px 16px; }
+
+  /* Portfolio overlays tighter */
+  .portfolio .portfolio-item .portfolio-info { left: 12px; right: 12px; padding: 10px; }
+
+  /* Team card info area higher to avoid cutoffs */
+  .team .member .member-info { bottom: -35px; left: 15px; right: 15px; padding: 16px 12px; }
+
+  /* CTA background not fixed and section padding reduced */
+  .call-to-action { padding: 60px 0; }
+  .call-to-action img { position: absolute; height: 100%; }
+
+}
+
+@media (max-width: 575px) {
+  /* Tighter paddings on extra small */
+  section, .section { padding: 32px 0; }
+
+  /* Section title sizes */
+  .section-title h2 { font-size: 1.1rem; }
+  .section-title span { font-size: 1.4rem; }
+
+  /* Cards and text sizes */
+  .services .service-item h3 { font-size: 1.05rem; }
+  .services .service-item p { font-size: 0.95rem; }
+
+  /* Team social icons spacing */
+  .team .member .social a { width: 36px; height: 36px; }
+
+  /* Contact info spacing */
+  .contact .info-item { margin-bottom: 24px; }
+  .contact .php-email-form button[type=submit] { width: 100%; }
+}
+
 .featured-services {
   --surface-color: color-mix(in srgb, var(--default-color), transparent 96%);
   padding-top: 0;
@@ -1921,6 +2009,107 @@ section,
   transform: translateY(-2px);
 }
 
+@media (max-width: 768px) {
+  html, body {
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  .header {
+    padding: 12px 0;
+  }
+  .hero {
+    padding: 100px 0 50px 0;
+    min-height: 65vh;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  .navmenu ul {
+    padding: 0;
+  }
+  .section, section {
+    padding: 45px 0;
+  }
+  .section-title h2 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+  .section-title span {
+    font-size: 2.1rem;
+  }
+  .services .service-item {
+    padding: 25px 15px;
+    margin-bottom: 20px;
+  }
+  .services .service-item h3 {
+    font-size: 1.2rem;
+  }
+  .portfolio .portfolio-filters li {
+    font-size: 1rem;
+    margin: 0 3px;
+  }
+  .portfolio .portfolio-item .portfolio-info {
+    left: 15px;
+    right: 15px;
+    padding: 10px;
+  }
+  .testimonials .testimonial-item {
+    min-height: 220px;
+    padding: 15px;
+  }
+  .footer .footer-newsletter, .footer .footer-top {
+    padding: 30px 0;
+  }
+  .footer .footer-newsletter h4 {
+    font-size: 1.2rem;
+  }
+  .footer .footer-links ul li {
+    padding: 8px 0;
+  }
+  .footer .footer-links ul a {
+    font-size: 1.1rem;
+  }
+  .footer .footer-about a {
+    font-size: 1.2rem;
+  }
+  .footer .footer-contact p {
+    font-size: 1rem;
+  }
+  .container, .container-xl {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .col, [class^="col-"] {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  /* Hide unnecessary desktop-only elements if any */
+  .desktop-only {
+    display: none !important;
+  }
+  /* Ensure no element causes horizontal scroll */
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* Already existing rules below */
 @media (max-width: 768px) {
   .error-404 {
     padding: 60px 0;
