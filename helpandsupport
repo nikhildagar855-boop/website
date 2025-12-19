@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help & Support | SheMateCare</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- AdminLTE CSS -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <style>
+    .support-card {
+      border-radius: 15px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+    .support-header {
+      background: linear-gradient(90deg, #f06292, #ba68c8);
+      color: white;
+      border-radius: 15px 15px 0 0;
+      padding: 25px;
+    }
+    .support-header h3 {
+      margin: 0;
+      font-weight: 600;
+    }
+    .faq-section h5 {
+      font-weight: 600;
+      margin-top: 20px;
+    }
+    .contact-info i {
+      color: #f06292;
+      width: 25px;
+    }
+  </style>
+</head>
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+
+  <!-- Content Wrapper -->
+  <div class="content-wrapper">
+    <div class="content-header">
+      <div class="container">
+        <div class="support-card card mt-4">
+          <div class="support-header text-center">
+            <h3>Help & Support – SheMateCare</h3>
+            <p>We’re here to help you with bookings, accounts, or any technical issue.</p>
+          </div>
+
+          <div class="card-body">
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+              <h4 class="mb-3"><i class="fas fa-question-circle"></i> Frequently Asked Questions</h4>
+
+              <h5>1. How do I book a service?</h5>
+              <p>Log in, choose your preferred category (Spa, Rituals, or Wellness), select a service, and confirm your booking. You’ll receive instant confirmation via email and app notification.</p>
+
+              <h5>2. Can I reschedule or cancel my booking?</h5>
+              <p>Yes, you can reschedule or cancel from <strong>My Bookings</strong> in your profile before the scheduled time. Cancellation charges may apply depending on the provider’s policy.</p>
+
+              <h5>3. How do I contact my service provider?</h5>
+              <p>Once your booking is confirmed, you can view provider details in the booking section and message or call directly through the app.</p>
+
+              <h5>4. I didn’t receive my OTP / verification email. What should I do?</h5>
+              <p>Check your spam or promotions folder. If it’s still missing, tap <strong>Resend OTP</strong> on the verification screen or contact our support team.</p>
+
+              <h5>5. How do I become a service provider on SheMateCare?</h5>
+              <p>Visit our <strong>Provider Registration</strong> page, fill in your details, upload required documents, and our team will review your application within 48 hours.</p>
+            </div>
+
+            <hr>
+
+            <!-- Technical Support -->
+            <div class="technical-support">
+              <h4 class="mb-3"><i class="fas fa-tools"></i> Technical Support</h4>
+              <p><strong>App not loading or crashing?</strong> Try clearing the cache, updating the app, or restarting your device. If the issue continues, share a screenshot with us through the support form below.</p>
+              <p><strong>Payment not processed or failed?</strong> If payment was deducted but booking wasn’t confirmed, send your transaction ID and email to our support team — we’ll resolve it within 24 hours.</p>
+            </div>
+
+            <hr>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+              <h4 class="mb-3"><i class="fas fa-headset"></i> Contact Our Support Team</h4>
+              <p><i class="fas fa-envelope"></i> <strong>Email:</strong> support@shematecare.com</p>
+              <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp Helpdesk:</strong> +91 9XXXXXXX (9 AM – 8 PM IST)</p>
+              <p><i class="fas fa-comments"></i> <strong>Live Chat:</strong> Tap the chat icon in the app for instant help.</p>
+              <p><i class="fas fa-briefcase"></i> <strong>Business Inquiries:</strong> business@shematecare.com</p>
+            </div>
+
+            <hr>
+
+            <!-- Operating Hours -->
+            <div class="timing">
+              <h4><i class="fas fa-clock"></i> Operating Hours</h4>
+              <p>Monday – Saturday: 9:00 AM to 8:00 PM<br>Sunday: 10:00 AM to 6:00 PM</p>
+            </div>
+
+            <hr>
+
+            <!-- Feedback -->
+            <div class="feedback text-center">
+              <h4><i class="fas fa-heart"></i> We Value Your Feedback</h4>
+              <p>Your opinions help us improve. Share your suggestions or complaints — we’ll make sure your voice is heard.</p>
+              <a href="contact_form.html" class="btn btn-pink" style="background-color:#f06292; color:white; border-radius:30px;">Send Feedback</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>
